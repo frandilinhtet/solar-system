@@ -4,8 +4,12 @@ on:
   workflow_dispatch:
   push:
     branches:
-      - main
       - 'feature/*'
+
+env:
+  MONGOURI: 'mongodb+srv://demo-db.kknfcly.mongodb.net/demo-db'
+  MONGO_USERNAME: ${{ vars.MONGO_USERNAME }}
+  MONGO_PASSWORD: ${{ secrets.MONGO_PASSWORD }}
     
 jobs:
     unit-testing:
