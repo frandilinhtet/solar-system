@@ -7,7 +7,7 @@ on:
       - 'feature/*'
 
 env:
-  MONGO_URI: 'mongodb+srv://demo-db.kknfcly.mongodb.net/demo_data'
+  MONGO_URI: 'mongodb+srv://demo-db.kknfcly.mongodb.net/demoData'
   MONGO_USERNAME: ${{ vars.MONGO_USERNAME }}
   MONGO_PASSWORD: ${{ secrets.MONGO_PASSWORD }}
     
