@@ -109,4 +109,4 @@ jobs:
               echo $IP
 
               echo Testing Image URI using wget
-              wget -q -O 127.0.0.1:3000/live | grep live
+              wget -q -O - 127.0.0.1:3000/live | grep live
